@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff; /* Azul claro como fondo */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #005b99; /* Azul oscuro para el encabezado */
+    color: #fff;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+nav {
+    background: #005b99; /* Azul medio */
+    padding: 15px 20px; /* Espaciado más amplio */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease; /* Transición suave de fondo */
+}
+
+nav:hover {
+    background-color: #004a80; /* Fondo más oscuro al pasar el ratón sobre la barra */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Mayor espacio entre los elementos */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Enlaces en negrita */
+    padding: 8px 15px; /* Espaciado en los enlaces */
+    border-radius: 5px; /* Bordes redondeados en los enlaces */
+    background-color: transparent; /* Sin fondo inicialmente */
+    transition: all 0.3s ease; /* Transición para hover */
+}
+
+nav a:hover {
+    background-color: #3399ff; /* Azul claro al pasar el ratón */
+    color: #fff; /* Mantener el color blanco del texto */
+    transform: scale(1.1); /* Efecto de agrandamiento en hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+}
+
+nav a:active {
+    background-color: #007acc; /* Azul más oscuro cuando se hace clic */
+    transform: scale(0.98); /* Efecto de presionado */
+}
+
+nav a:focus {
+    outline: 3px solid #ffcc00; /* Resalta el enlace al recibir el foco */
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.imagen {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagen img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.imagen img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #005b99; /* Mismo azul oscuro que el encabezado */
+    color: #fff;
+    margin-top: 20px;
+}
